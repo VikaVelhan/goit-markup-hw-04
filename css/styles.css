@@ -139,6 +139,7 @@ header{
 .header-contact{
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 .header-contact .item:not(:first-child){
     margin-left: 50px;
@@ -147,6 +148,7 @@ header{
 .header-contact .link {
     color:var(--text-color);
     display: block;
+   
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -158,13 +160,11 @@ header{
 .header-contact .link:focus{
     color: var(--accent-color);
 }
+
 .icon-mail,
-.icon-mail {
-    fill: currentColor;
-}
-.icon-phon,
 .icon-phon {
     fill: currentColor;
+    margin-right: 10px;
 }
 /*hero*/
 .hero{
@@ -306,6 +306,7 @@ header{
     margin-bottom: 0;
 }
 
+
 /*about*/
 .about {
     padding-top: 0px;
@@ -357,6 +358,7 @@ header{
     line-height: 1.9;
     text-align: center;
     padding: 0px;
+    margin-bottom: 16px;
 }
 .team-name{
     padding: 30px 0px;
@@ -364,6 +366,42 @@ header{
 .team-card{
     background-color: var(--primary-background-color);
 }
+.social-link-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon{
+    fill: #afb1b8;
+
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.social-link:last-child{
+    margin-right: 0px;
+}
+
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--accent-color);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
+    fill: #FFFFFF;
+}
+/*.social-icon:hover,
+.social-icon:focus {
+    fill: #FFFFFF;
+}*/
+/*Clients*/
 
 .client{
     display: flex;
@@ -388,8 +426,8 @@ header{
 .client-logo:focus {
     border: 1px solid var(--accent-color);
 }
-.icon-logo:hover,
-.icon-logo:focus{
+.client-logo:hover .icon-logo,
+.client-logo:focus .icon-logo{
     fill: var(--accent-color);
 }
 

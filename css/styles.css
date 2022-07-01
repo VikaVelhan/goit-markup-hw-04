@@ -140,9 +140,7 @@ header {
 .header-contact .item:not(:first-child) {
   margin-left: 50px;
 }
-.header-contact .item{
- 
-}
+
 .header-contact .link {
   color: var(--text-color);
   display: flex;
@@ -375,9 +373,14 @@ margin-bottom: 30px;
 .social-link-flex {
   display: flex;
   justify-content: center;
-  cursor: pointer;
+  
 }
-
+.item-social-link{
+  margin-right: 10px;
+}
+.item-social-link:last-child{
+  margin-right: 0px;
+}
 .social-icon {
   fill: var(--icon-color);
 }
